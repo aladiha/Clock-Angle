@@ -26,5 +26,6 @@ def calculate_angle(time):
         return 360 - angel
     return angel
 
+
 if __name__ == '__main__':
-    print(calculate_angle("13:17"))
+    print("clock angel is: " + str(calculate_angle("13:17")))
