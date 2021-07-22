@@ -16,16 +16,16 @@ def calculate_angle(time):
     hours %= 12
 
     #calculate the angel of the hours and the mins
-    hours_angel = hours * 30 + mins * (30/60)
-    mins_angel = mins * 6
+    hours_angle = hours * 30 + mins * (30/60)
+    mins_angle = mins * 6
 
     #get the difference as the resulting angel
-    angel = hours_angel - mins_angel if hours_angel > mins_angel else mins_angel - hours_angel
+    angle = hours_angle - mins_angle if hours_angle > mins_angle else mins_angle - hours_angle
 
-    if angel > 180:
-        return 360 - angel
-    return angel
+    if angle > 180:
+        return 360 - angle
+    return angle
 
 
 if __name__ == '__main__':
-    print("clock angel is: " + str(calculate_angle("13:17")))
+    print("clock angel is: " + str(calculate_angle("00:01")))
